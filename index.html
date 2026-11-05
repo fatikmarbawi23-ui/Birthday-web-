@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#dff6ff">
+  <title>Birthday Web</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="stylesheet" href="css/confetti.css">
+  <link rel="stylesheet" href="css/home.css">
+
+
+
+</head>
+
+<body>
+
+  <div id="background"></div>
+
+  <div id="confetti"></div>
+
+  <div class="login-box" id="loginBox">
+
+    <h1>Selamat Datang</h1>
+
+    <h2>Masukkan password-nya dulu</h2>
+
+    <input type="password" id="passwordInput" inputmode="numeric" placeholder="Masukkan Password">
+
+    <button type="button" id="submitBtn">Masuk</button>
+
+  </div>
+
+  <div class="overlay" id="wrongPopup">
+    <div class="popup">
+      <img src="assets/photo/salah.jpg" alt="Password salah">
+      <h1>Password nya salah🤪</h1>
+      <button type="button" id="retryBtn">Coba Lagi</button>
+    </div>
+  </div>
+
+  <div class="overlay" id="correctPopup">
+    <div class="popup">
+      <h1>Password benar</h1>
+      <div class="spinner" id="spinner"></div>
+    </div>
+  </div>
+
+  <script src="js/confetti.js" defer></script>
+  <script src="js/password.js" defer></script>
+
+</body>
+
+</html>

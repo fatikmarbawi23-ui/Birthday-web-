@@ -1,0 +1,275 @@
+#main {
+  justify-content: flex-start;
+  gap: 24px;
+  padding-top: 150px;
+}
+
+#video {
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 0;
+  gap: 24px;
+  padding-top: 175px;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 900;
+  color: #123b5d;
+}
+
+.camera {
+  width: min(94vw, 440px);
+}
+
+.cam-body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 22px 16px;
+  background: linear-gradient(160deg, #454545, #171717);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 28px;
+  box-shadow:
+    0 10px 30px rgb(133, 133, 133, 0.35),
+    inset 0 2px 6px rgb(8, 8, 8, 0.5);
+}
+
+.cam-dot {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 18px;
+  height: 6px;
+  background: 0 0 8px rgba(229, 57, 53, 0.7);
+  border-radius: 6px;
+  transform: translateX(-50%);
+}
+
+.cam-screen {
+  flex: 1;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 18px;
+  box-shadow:
+    inset 0 2px 5px rgba(255, 255, 255, 0.18),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.55),
+    0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.cam-view {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: linear-gradient(135deg,
+      #343434,
+      #171717);
+  border-radius: 12px;
+}
+
+.cam-view video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.rec {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 8px;
+  color: #ffffff;
+  font-size: 0.6rem;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+}
+
+.rec i {
+  width: 7px;
+  height: 7px;
+  background: #ff3d6e;
+  border-radius: 50%;
+}
+
+.rec.recording i {
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 0 solid #ffffff;
+}
+
+.corner.tl {
+  top: 8px;
+  left: 8px;
+  border-width: 2px 0 0 2px;
+}
+
+.corner.tr {
+  top: 8px;
+  right: 8px;
+  border-width: 2px 2px 0 0;
+}
+
+.corner.bl {
+  bottom: 8px;
+  left: 8px;
+  border-width: 0 0 2px 2px;
+}
+
+.corner.br {
+  bottom: 8px;
+  right: 8px;
+  border-width: 0 2px 2px 0;
+}
+
+.cam-label {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  padding: 3px 10px;
+  color: #ffffff;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+  transform: translateX(-50%);
+}
+
+.dpad {
+  position: relative;
+  flex-shrink: 0;
+  width: 84px;
+  height: 84px;
+  background: rgba(255, 255, 255, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+.arrow {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.arrow.up {
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow.down {
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow.left {
+  left: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.right {
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dpad-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 2px 3px rgba(255, 255, 255, 0.25),
+    inset 0 -3px 5px rgba(0, 0, 0, 0.6),
+    0 2px 5px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.dpad-center:active {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.typing {
+  min-height: 1.4em;
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(1.6rem, 6vw, 2.2rem);
+  font-weight: 700;
+  color: #dd6eec;
+  text-shadow:
+    0 1px 2px rgba(255, 255, 255, 1),
+    0 0 6px rgba(255, 255, 255, 1);
+}
+
+.typing::after {
+  content: '|';
+  margin-left: 2px;
+  animation: caret 0.8s steps(2, start) infinite;
+}
+
+@keyframes caret {
+  to {
+    visibility: hidden;
+  }
+}
+
+.arrow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 36px;
+  padding: 0;
+  font-family: inherit;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow-btn:active {
+  color: #f5d6a0;
+}
+
+.arrow.left.arrow-btn {
+  left: 2px;
+}
+
+.arrow.right.arrow-btn {
+  right: 2px;
+}
+
+.hint {
+  color: #000000;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.65);
+}

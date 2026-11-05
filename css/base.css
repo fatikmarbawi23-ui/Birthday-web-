@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Finlandica', sans-serif;
+}
+
+@media (min-width: 1200px) {
+  html body h1 {
+    font-size: 44px;
+  }
+
+  html body .camera {
+    width: min(60vw, 600px);
+  }
+
+  html body .book {
+    --pw: min(18vw, 270px);
+  }
+
+  html body .scroll-wrap {
+    width: min(50vw, 520px);
+  }
+
+  html body .msg-box {
+    width: min(40vw, 500px);
+  }
+}
+
+@media (min-width: 768px) {
+  html body h1 {
+    font-size: 38px;
+  }
+
+  html body .topbar {
+    padding: 24px;
+  }
+
+  html body .hamburger,
+  html body .music-btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  html body .side-nav {
+    width: 300px;
+    padding: 110px 24px 24px;
+  }
+
+  html body .side-nav a {
+    font-size: 1.2rem;
+  }
+
+  html body .page {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  html body .camera {
+    width: min(80vw, 520px);
+  }
+
+  html body .cam-body {
+    padding: 26px 20px;
+    gap: 18px;
+  }
+
+  html body .dpad {
+    width: 96px;
+    height: 96px;
+  }
+
+  html body .dpad-center {
+    width: 32px;
+    height: 32px;
+  }
+
+  html body .arrow {
+    font-size: 1.25rem;
+  }
+
+  html body .cam-label {
+    font-size: 0.65rem;
+  }
+
+  html body .rec {
+    font-size: 0.7rem;
+  }
+
+  html body .hint {
+    font-size: 13px;
+  }
+
+  html body .typing {
+    margin: 56px;
+  }
+
+  html body .stage {
+    perspective: 1800px;
+  }
+
+  html body .book {
+    --pw: min(24vw, 240px);
+  }
+
+  html body .book-ctrl button {
+    width: 58px;
+    height: 58px;
+  }
+
+  html body .special-title {
+    font-size: 1.6rem;
+  }
+
+  html body .viewer {
+    padding: 90px 40px 32px;
+  }
+
+  html body .viewer-back {
+    width: 52px;
+    height: 52px;
+  }
+
+  html body .login-box {
+    width: 420px;
+  }
+
+  html body .popup,
+  html body .pw-box,
+  html body .sent-box {
+    width: 360px;
+  }
+
+  html body .scroll-wrap {
+    width: min(70vw, 460px);
+  }
+
+  html body .paper-body p {
+    font-size: 1.45rem;
+  }
+
+  html body .msg-box {
+    width: min(80vw, 460px);
+  }
+
+  html body .credits-roll h1 {
+    font-size: 3.2rem;
+  }
+
+  html body .c-role {
+    font-size: 0.9rem;
+  }
+
+  html body .c-name {
+    font-size: 1.8rem;
+  }
+
+  html body .c-end {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html body h1 {
+    font-size: 26px;
+  }
+
+  html body .topbar {
+    padding: 12px;
+  }
+
+  html body .hamburger,
+  html body .music-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1.25rem;
+  }
+
+  html body .side-nav {
+    padding: 80px 16px 16px;
+  }
+
+  html body .side-nav a {
+    padding: 12px 14px;
+    font-size: 1rem;
+  }
+
+  html body .page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  html body #main {
+    padding-top: 120px;
+    gap: 18px;
+  }
+
+  html body #video {
+    padding-top: 140px;
+    gap: 18px;
+  }
+
+  html body .foto-page {
+    padding-top: 120px;
+    gap: 22px;
+  }
+
+  html body .pesan,
+  html body .ucapan {
+    padding-top: 90px;
+    gap: 18px;
+  }
+
+  html body .camera {
+    width: 96vw;
+  }
+
+  html body .cam-body {
+    padding: 18px 12px;
+    gap: 10px;
+    border-radius: 24px;
+  }
+
+  html body .cam-screen {
+    padding: 6px;
+    border-radius: 14px;
+  }
+
+  html body .cam-view {
+    border-radius: 10px;
+  }
+
+  html body .dpad {
+    width: 74px;
+    height: 74px;
+  }
+
+  html body .dpad-center {
+    width: 26px;
+    height: 26px;
+  }
+
+  html body .arrow {
+    font-size: 0.95rem;
+  }
+
+  html body .arrow-btn {
+    width: 26px;
+    height: 32px;
+    font-size: 1.35rem;
+  }
+
+  html body .rec {
+    top: 6px;
+    left: 6px;
+    padding: 2px 6px;
+    font-size: 0.55rem;
+  }
+
+  html body .corner {
+    width: 12px;
+    height: 12px;
+  }
+
+  html body .cam-label {
+    bottom: 6px;
+    padding: 2px 8px;
+    font-size: 0.5rem;
+  }
+
+  html body .hint {
+    font-size: 11px;
+  }
+
+  html body .typing {
+    margin: 24px;
+  }
+
+  html body .book {
+    --pw: min(40vw, 160px);
+  }
+
+  html body .face {
+    padding: 8px 6px;
+  }
+
+  html body .cover {
+    font-size: clamp(1.3rem, 6vw, 1.6rem);
+  }
+
+  html body .special-title {
+    font-size: 1.2rem;
+  }
+
+  html body .book-ctrl {
+    gap: 18px;
+  }
+
+  html body .book-ctrl button {
+    width: 48px;
+    height: 48px;
+    font-size: 1.6rem;
+  }
+
+  html body .viewer {
+    padding: 70px 12px 20px;
+  }
+
+  html body .viewer img {
+    border-width: 4px;
+  }
+
+  html body .viewer-back {
+    top: 12px;
+    left: 12px;
+    width: 42px;
+    height: 42px;
+  }
+
+  html body .login-box {
+    padding: 28px 20px;
+  }
+
+  html body .login-box h1 {
+    font-size: 1.7rem;
+  }
+
+  html body .login-box h2 {
+    margin-bottom: 18px;
+  }
+
+  html body .popup,
+  html body .pw-box,
+  html body .sent-box {
+    width: 90vw;
+    padding: 24px 20px;
+  }
+
+  html body .popup h1 {
+    font-size: 1.25rem;
+  }
+
+  html body .popup img {
+    max-height: 160px;
+  }
+
+  html body .scroll-wrap {
+    width: 94vw;
+    height: 58vh;
+  }
+
+  html body .paper-body {
+    margin: 0 10px;
+  }
+
+  html body .paper-body p {
+    padding: 18px 14px 26px;
+    font-size: 1.15rem;
+  }
+
+  html body .msg-box {
+    width: 94vw;
+    padding: 22px 18px;
+  }
+
+  html body .credits-roll {
+    padding: 0 18px;
+  }
+
+  html body .credits-roll h1 {
+    margin-bottom: 56px;
+    font-size: 2.2rem;
+  }
+
+  html body .c-role {
+    font-size: 0.72rem;
+  }
+
+  html body .c-name {
+    margin-bottom: 48px;
+    font-size: 1.3rem;
+  }
+
+  html body .c-end {
+    font-size: 1.5rem;
+  }
+
+  html body .credits-close {
+    bottom: 22px;
+  }
+}
+
+@media (max-width: 360px) {
+  html body h1 {
+    font-size: 22px;
+  }
+
+  html body .hamburger,
+  html body .music-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  html body .side-nav {
+    width: 78vw;
+  }
+
+  html body .cam-body {
+    padding: 16px 10px;
+    gap: 8px;
+  }
+
+  html body .dpad {
+    width: 64px;
+    height: 64px;
+  }
+
+  html body .dpad-center {
+    width: 22px;
+    height: 22px;
+  }
+
+  html body .arrow {
+    font-size: 0.85rem;
+  }
+
+  html body .arrow-btn {
+    width: 22px;
+    height: 28px;
+    font-size: 1.2rem;
+  }
+
+  html body .typing {
+    margin: 16px;
+  }
+
+  html body .book {
+    --pw: min(38vw, 130px);
+  }
+
+  html body .photo {
+    padding: 4px 4px 12px;
+  }
+
+  html body .photo::before {
+    width: 14px;
+    height: 12px;
+  }
+
+  html body .cover {
+    font-size: 1.2rem;
+  }
+
+  html body .book-ctrl button {
+    width: 44px;
+    height: 44px;
+  }
+
+  html body .login-box {
+    padding: 24px 16px;
+  }
+
+  html body .login-box h1 {
+    font-size: 1.5rem;
+  }
+
+  html body .login-box h2 {
+    font-size: 0.9rem;
+  }
+
+  html body .paper-body p {
+    font-size: 1.05rem;
+  }
+
+  html body .c-name {
+    font-size: 1.15rem;
+  }
+
+  html body .c-end {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-height: 520px) and (orientation: landscape) {
+  html body h1 {
+    font-size: 22px;
+  }
+
+  html body .side-nav {
+    padding-top: 70px;
+  }
+
+  html body .side-nav a {
+    padding: 10px 14px;
+  }
+
+  html body #main {
+    padding-top: 80px;
+    gap: 12px;
+  }
+
+  html body #video {
+    padding-top: 90px;
+    gap: 12px;
+  }
+
+  html body .foto-page {
+    padding-top: 80px;
+    gap: 14px;
+  }
+
+  html body .pesan,
+  html body .ucapan {
+    padding-top: 70px;
+    gap: 12px;
+  }
+
+  html body .camera {
+    width: min(60vw, 360px);
+  }
+
+  html body .typing {
+    margin: 16px;
+  }
+
+  html body .book {
+    --pw: min(22vw, 120px);
+  }
+
+  html body .scroll-wrap {
+    height: 50vh;
+  }
+
+  html body .msg-box {
+    padding: 16px;
+  }
+
+  html body .msg-box textarea {
+    min-height: 70px;
+  }
+
+  html body .login-box {
+    padding: 18px 20px;
+  }
+
+  html body .login-box h1 {
+    font-size: 1.4rem;
+  }
+
+  html body .login-box h2 {
+    margin-bottom: 12px;
+  }
+
+  html body .popup,
+  html body .pw-box,
+  html body .sent-box {
+    padding: 16px;
+  }
+
+  html body .popup img {
+    max-height: 90px;
+  }
+
+  html body .viewer {
+    padding: 64px 12px 12px;
+  }
+
+  html body .credits-close {
+    bottom: 14px;
+  }
+}

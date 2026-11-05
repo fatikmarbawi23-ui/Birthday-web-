@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#dff6ff">
+  <title>Birthday Web</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="stylesheet" href="css/confetti.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/camera.css">
+  <link rel="stylesheet" href="css/gretting.css">
+  <link rel="stylesheet" href="css/foto.css">
+  <link rel="stylesheet" href="css/ucapan.css">
+  <link rel="stylesheet" href="css/pesan.css">
+  <link rel="stylesheet" href="css/credit.css">
+
+</head>
+
+<body>
+
+  <div id="background"></div>
+
+  <div id="confetti"></div>
+
+  <header class="topbar">
+    <button type="button" class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <button type="button" class="music-btn" id="musicBtn" aria-label="Putar musik">♪</button>
+  </header>
+
+  <div class="nav-backdrop" id="navBackdrop"></div>
+  <nav class="side-nav" id="sideNav">
+    <a href="#video">Video</a>
+    <a href="#foto">Foto</a>
+    <a href="#ucapan">Ucapan</a>
+    <a href="#pesan">Pesan</a>
+  </nav>
+
+  <section class="page main-page active" id="main">
+    <h1>This special video for you!!!</h1>
+
+    <div class="camera">
+      <p>FLOWER MEMORIES</p>
+
+      <div class="cam-body">
+        <span class="cam-dot"></span>
+
+        <div class="cam-screen">
+          <div class="cam-view">
+            <video id="mainVideo" src="assets/videos/video.mp4" playsinline loop preload="auto"></video>
+            <span class="rec" id="rec"><i></i>REC</span>
+            <span class="corner tl"></span>
+            <span class="corner tr"></span>
+            <span class="corner bl"></span>
+            <span class="corner br"></span>
+            <span class="cam-label">FLOWER CAM 01/01</span>
+          </div>
+        </div>
+
+        <div class="dpad">
+          <span class="arrow up">⌃</span>
+          <span class="arrow down">⌄</span>
+          <span class="arrow left">‹</span>
+          <span class="arrow right">›</span>
+          <button type="button" class="dpad-center" id="playBtn" aria-label="Putar atau jeda video"></button>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="typing" id="typingText"></h2>
+
+  </section>
+
+  <section class="page video-page" id="video">
+    <h1>My Edit with your photo</h1>
+
+    <div class="camera">
+      <p>FLOWER MEMORIES</p>
+
+      <div class="cam-body">
+        <span class="cam-dot"></span>
+
+        <div class="cam-screen">
+          <div class="cam-view">
+            <video id="clipVideo" playsinline preload="metadata"></video>
+            <span class="rec" id="clipRec"><i></i>REC</span>
+            <span class="corner tl"></span>
+            <span class="corner tr"></span>
+            <span class="corner bl"></span>
+            <span class="corner br"></span>
+            <span class="cam-label" id="clipLabel">FLOWER CAM 01/03</span>
+          </div>
+        </div>
+
+        <div class="dpad">
+          <span class="arrow up">⌃</span>
+          <span class="arrow down">⌄</span>
+          <button type="button" class="arrow arrow-btn left" id="prevBtn" aria-label="Video sebelumnya">‹</button>
+          <button type="button" class="arrow arrow-btn right" id="nextBtn" aria-label="Video berikutnya">›</button>
+          <button type="button" class="dpad-center" id="clipPlayBtn" aria-label="Putar atau jeda video"></button>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint">• Tekan &lt; atau &gt; untuk mengganti video</p>
+
+  </section>
+
+  <section class="page foto-page" id="foto">
+    <h1>Special book for you</h1>
+
+    <div class="book" id="book">
+
+      <div class="sheet" data-i="0">
+        <div class="face front cover">
+          <span>Our<br>Memories<br>for you<br>
+            <p class="heart-book">♥</p>
+          </span>
+        </div>
+        <div class="face back paper">
+          <div class="photo"><img src="assets/photo/photo1.jpg" alt="Foto 1"></div>
+          <div class="photo"><img src="assets/photo/photo2.jpg" alt="Foto 2"></div>
+        </div>
+      </div>
+
+      <div class="sheet" data-i="1">
+        <div class="face front paper">
+          <div class="photo"><img src="assets/photo/photo3.jpg" alt="Foto 3"></div>
+          <div class="photo"><img src="assets/photo/photo4.jpg" alt="Foto 4"></div>
+        </div>
+        <div class="face back paper">
+          <div class="photo"><img src="assets/photo/photo5.jpg" alt="Foto 5"></div>
+          <div class="photo"><img src="assets/photo/photo6.jpg" alt="Foto 6"></div>
+        </div>
+      </div>
+
+      <div class="sheet" data-i="2">
+        <div class="face front paper">
+          <div class="photo"><img src="assets/photo/photo7.jpg" alt="Foto 7"></div>
+          <div class="photo"><img src="assets/photo/photo8.jpg" alt="Foto 8"></div>
+        </div>
+        <div class="face back paper">
+          <div class="photo"><img src="assets/photo/photo9.jpg" alt="Foto 9"></div>
+          <div class="photo"><img src="assets/photo/photo10.jpg" alt="Foto 10"></div>
+        </div>
+      </div>
+
+      <div class="sheet" data-i="3">
+        <div class="face front paper">
+          <div class="photo"><img src="assets/photo/photo11.jpg" alt="Foto 11"></div>
+          <div class="photo"><img src="assets/photo/photo12.jpg" alt="Foto 12"></div>
+        </div>
+        <div class="face back paper">
+          <h3 class="special-title">Special Photo</h3>
+          <div class="photo special" data-special="true"><img src="assets/photo/photo13.jpg" alt="Foto spesial 1">
+          </div>
+        </div>
+      </div>
+
+      <div class="sheet" data-i="4">
+        <div class="face front paper">
+          <h3 class="special-title">Special Photo</h3>
+          <div class="photo special" data-special="true"><img src="assets/photo/photo14.jpg" alt="Foto spesial 2">
+          </div>
+        </div>
+        <div class="face back cover">
+          <span>♥</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="book-ctrl">
+      <button type="button" id="bookPrev" aria-label="Halaman sebelumnya">
+        &lt;</button>
+      <button type="button" id="bookNext" aria-label="Halaman berikutnya">&gt;</button>
+    </div>
+  </section>
+
+  <div class="viewer" id="viewer">
+    <button type="button" class="viewer-back" id="viewerBack" aria-label="Kembali">←</button>
+    <img id="viewerImg" alt="">
+  </div>
+
+  <div class="pw-modal" id="pwModal">
+    <div class="pw-box">
+      <h2>Foto Spesial</h2>
+      <p>Masukkan password untuk membuka</p>
+      <input type="password" id="pwInput" inputmode="numeric" placeholder="Password">
+      <p class="pw-msg" id="pwMsg"></p>
+      <button type="button" id="pwOk">Buka</button>
+      <button type="button" class="pw-cancel" id="pwCancel">Batal</button>
+    </div>
+  </div>
+
+  <section class="page ucapan" id="ucapan">
+    <h1>A Letter From My Heart</h1>
+
+    <div class="scroll-wrap">
+      <div class="scroll" id="scrollEl">
+        <div class="roll"></div>
+        <div class="paper-body" id="paperBody">
+          <p id="scrollText"></p>
+        </div>
+        <div class="roll"></div>
+      </div>
+    </div>
+
+    <p class="hint" id="scrollHint">Tekan gulungan untuk membukanya</p>
+  </section>
+
+  <section class="page pesan" id="pesan">
+    <h1>Message</h1>
+
+    <form class="msg-box" id="msgForm">
+      <input type="hidden" name="access_key" value="MASUKKAN_ACCESS_KEY_DI_SINI">
+      <input type="hidden" name="subject" value="Pesan baru dari website ulang tahun">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+      <label for="msgName">Nama</label>
+      <input type="text" id="msgName" name="name" placeholder="Nama kamu" required>
+
+      <label for="msgText">Pesan untuk pembuat web</label>
+      <textarea id="msgText" name="message" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+
+      <button type="submit" id="msgBtn">Kirim</button>
+      <p class="msg-status" id="msgStatus"></p>
+    </form>
+  </section>
+
+  <div class="sent-modal" id="sentModal">
+    <div class="sent-box">
+      <h2>Pesan berhasil dikirim!</h2>
+      <p>Terima kasih, pesanmu sudah sampai.</p>
+      <button type="button" id="sentOk">Oke</button>
+    </div>
+  </div>
+
+  <audio id="bgMusic" src="assets/music/music.mp3" loop></audio>
+
+  <div class="credits" id="creditsEl">
+    <div class="credits-roll" id="creditsRoll">
+      <h1>Sebuah Karya Kecil</h1>
+
+      <p class="c-role">Sebuah hadiah yang dirancang dengan sepenuh hati</p>
+      <p class="c-name">Birthday Web</p>
+
+      <p class="c-role">Konsep dan gagasan</p>
+      <p class="c-name">Nama Pembuat</p>
+
+      <p class="c-role">Desain dan arahan visual</p>
+      <p class="c-name">Nama Pembuat</p>
+
+      <p class="c-role">Pengembangan dan kode</p>
+      <p class="c-name">Nama Developer atau Alat</p>
+
+      <p class="c-role">Dibangun dengan</p>
+      <p class="c-name">HTML · CSS · JavaScript</p>
+
+      <p class="c-role">Tempat cerita ini bermula</p>
+      <p class="c-name">Dari sebuah layar, menjadi sebuah kenangan</p>
+
+      <p class="c-role">Musik pengiring</p>
+      <p class="c-name">Judul Lagu</p>
+
+      <p class="c-role">Dan yang paling penting...</p>
+      <p class="c-name">Untuk seseorang yang istimewa</p>
+
+      <p class="c-end">
+        Nama Penerima ♥
+      </p>
+
+      <p class="c-end">
+        Tidak semua hadiah bisa dibungkus dengan kertas.
+        <br>
+        Ada yang dirangkai dari waktu, pikiran,
+        <br>
+        dan keinginan sederhana untuk membuat seseorang tersenyum.
+      </p>
+
+      <p class="c-end">
+        Jika suatu hari halaman ini menjadi kenangan,
+        <br>
+        semoga perasaan di balik pembuatannya
+        <br>
+        tetap menjadi sesuatu yang berarti.
+      </p>
+
+      <p class="c-end">
+        Terima kasih telah menjadi bagian
+        <br>
+        dari cerita kecil ini.
+      </p>
+
+      <p class="c-end">
+        Semoga setelah membaca ini,
+        <br>
+        kamu senyum-senyum sendiri😹
+      </p>
+
+      <p class="c-end">
+        Happy Birthday
+        <br>
+        my favorite person ♥
+      </p>
+
+    </div>
+
+    <button type="button" class="credits-close" id="creditsClose">Kembali</button>
+
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/confetti.js" defer></script>
+  <script src="js/gretting.js" defer></script>
+  <script src="js/video.js" defer></script>
+  <script src="js/foto.js" defer></script>
+  <script src="js/ucapan.js" defer></script>
+  <script src="js/pesan.js" defer></script>
+
+</body>
+
+</html>

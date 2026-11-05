@@ -1,0 +1,11 @@
+#background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 20% 15%, #b8e9ff 0%, transparent 95%),
+    radial-gradient(ellipse at 80% 25%, #8ed8f8 0%, transparent 90%),
+    radial-gradient(ellipse at 30% 80%, #b8cfff 0%, transparent 95%),
+    radial-gradient(ellipse at 85% 85%, #e0f7fa 0%, transparent 90%),
+    #dff6ff;
+}

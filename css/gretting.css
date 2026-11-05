@@ -1,0 +1,21 @@
+.typing {
+  min-height: 1.4em;
+  margin: 45px;
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(1.6rem, 6vw, 2.2rem);
+  font-weight: 700;
+  color: #ee82ee;
+  text-shadow:
+    0 0 4px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.typing::after {
+  content: '|';
+  margin-left: 2px;
+  animation: caret 0.8s steps(2, start) infinite;
+}
+
+@keyframes caret {
+  to { visibility: hidden; }
+}
